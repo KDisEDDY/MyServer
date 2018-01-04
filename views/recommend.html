@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <header>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 	<title>recommendpage</title>
 </header>
@@ -8,14 +11,37 @@
 	<section id="title">
 		<p>首页推荐</p>
 	</section>
-	<section id="headContent">
-		
-	</section>
-	<section id="banner">
-		
-	</section>
+	<section id="banner" class="carousel slide">
+		<!-- 轮播（Carousel）指标 -->
+		<ol class="carousel-indicators">
+			<li data-target="#banner" data-slide-to="0" class="active"></li>
+			<li data-target="#banner" data-slide-to="1"></li>
+			<li data-target="#banner" data-slide-to="2"></li>
+		</ol>   
+		<!-- 轮播（Carousel）项目 -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="img/spiker1.jpg" alt="First slide">
+			</div>
+			<div class="item">
+				<img src="img/spiker2.jpg" alt="Second slide">
+			</div>
+			<div class="item">
+				<img src="img/spiker1.jpg" alt="Third slide">
+			</div>
+		</div>
+		<!-- 轮播（Carousel）导航 -->
+		<a class="carousel-control left" href="#banner" 
+		   data-slide="prev">&lsaquo;</a>
+		<a class="carousel-control right" href="#banner" 
+		   data-slide="next">&rsaquo;</a>
+	</section> 
 	<section id="fragContent">
-		
+		<div class="title">理&nbsp;&nbsp;&nbsp;财</div>
+		<div class="line"></div>
+		<div class="clickitem">
+			
+		</div>
 	</section>
 </body>
 <footer>
